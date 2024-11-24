@@ -84,8 +84,8 @@
             color: #FFD700; /* Gold color for price */
         }
 
-        /* Pay Now button and Free Shipping text */
-        .pay-now-button {
+         /* Buttons and additional text styles */
+         .pay-now-button {
             display: block;
             width: 100%;
             padding: 10px;
@@ -100,11 +100,50 @@
             font-weight: bold;
         }
 
+        .play-voice-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #000000; /* Gold color for button */
+            color: #ffffff; /* Black text color for button */
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
         .free-shipping {
             font-size: 0.9em;
             color: #fff;
             text-align: center;
             margin-top: 5px;
+        }
+
+        .audio-player {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .audio-player audio {
+            width: 100%; /* Ensures the audio player fits nicely */
+        }
+
+        .soundcloud-link {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .soundcloud-link a {
+            color: #FFD700; /* Gold color for the link */
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .soundcloud-link a:hover {
+            text-decoration: underline;
         }
 
     </style>
@@ -128,8 +167,32 @@
             <p class="description">Discover the elegance of the Daniel Klein's Quartz Women's Watch. This stylish timepiece combines a sophisticated design with precise quartz movement, making it an excellent choice for any occasion. Its classic look and reliable performance make it a versatile addition to your accessory collection.</p>
             <p class="price">$35.00</p>
             <button class="pay-now-button">Pay Now</button>
-            <p class="free-shipping">Free Shipping</p>
+            <p class="free-shipping">15$ Shipping</p>
+            <div class="audio-player">
+                <button class="play-voice-button">Play Voice Memo 👇</button>
+                <br>
+                <audio controls>
+                    <source src="path_to_audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
         </div>
     </div>
+
+    <!-- Audio Element -->
+    <audio id="audio" src="path_to_audio.mp3"></audio>
+    <!-- 
+    
+    <div class="soundcloud-link">
+        <a href="https://soundcloud.com" target="_blank">Play on SoundCloud</a>
+    </div>
+    -->
+
+    <script>
+        function playAudio() {
+            const audio = document.getElementById('audio');
+            audio.play();
+        }
+    </script>
 </body>
 </html>
