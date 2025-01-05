@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XJT3JC6VKR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XJT3JC6VKR');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif; /* Royal-style font */
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #000; /* Black background for the navbar */
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            font-size: 2em; /* Larger logo font size */
+            color: #fff;
+            text-decoration: none;
+            margin-right: auto; /* Push the navigation links to the right */
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px; /* Add spacing between the navigation items */
+        }
+
+        .navbar ul li {
+            margin: 0;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em; /* Increased font size for the navigation links */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center; /* Center the container */
+            align-items: flex-start; /* Align items to the top */
+            padding: 40px; /* Increased padding for spacing */
+        }
+
+        .gallery {
+            flex: 1;
+            max-width: 40%; /* Limiting the gallery width */
+            padding-right: 20px;
+        }
+
+        .gallery img {
+            max-width: 80%;
+            height: auto;
+            display: block;
+        }
+
+        .item-details {
+            flex: 1;
+            max-width: 40%; /* Limiting the item details width */
+            padding-left: 20px;
+        }
+
+        .item-details h1 {
+            margin-top: 0;
+        }
+
+        .item-details .description {
+            margin: 10px 0;
+        }
+
+        .item-details .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #FFD700; /* Gold color for price */
+        }
+
+        /* Pay Now button and Free Shipping text */
+        .pay-now-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #FFD700; /* Gold color for button */
+            color: #000; /* Black text color for button */
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .free-shipping {
+            font-size: 0.9em;
+            color: #fff;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .necklace-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Four columns */
+            gap: 0.5em; /* Small gap between boxes */
+            justify-content: center; /* Center the grid horizontally */
+            width: 80%; /* Adjusted width of the grid */
+            margin: 0 auto; /* Center the grid within its parent */
+        }
+
+        /* Necklace box styles */
+        .necklace-box {
+            background-color: #000000;
+            padding: 1em; /* Adjusted padding */
+            border: 0.5px solid #fff; /* White border */
+            border-radius: 10px; /* Make the boxes rounder */
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for necklace boxes */
+        .necklace-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgb(255, 255, 255);
+        }
+
+        /* Image styling within the necklace boxes */
+        .necklace-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px; /* Round the image corners slightly */
+        }
+
+        .description {
+            margin: 0.5em 0;
+            font-weight: bold;
+        }
+
+        .price {
+            color: #FFD700;
+        }
+
+        .necklace-box a {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+        }
+
+        .necklace-box a:hover {
+            background-color: #444;
+        }
+
+        #watches {
+            text-align: center; /* Center the text */
+            padding: 20px 0; /* Add spacing above and below the text */
+        }
+
+        #watches h1 {
+            margin: 0; /* Remove default margin */
+            padding-bottom: 20px; /* Add spacing between heading and boxes */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">NOVELTY BOY</a>
+            <ul>
+                <li><a href="Watches.html">Watches</a></li>
+                <li><a href="Necklaces.html">Necklaces</a></li>
+                <li><a href="Rings.html">Rings</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="watches">
+        <br><br><br><br><br>
+        <h1>Watches</h1>
+        <br><br><br>
+        <div class="necklace-grid">
+            <div class="necklace-box">
+                <a href="Calvin Kleins Ladies Swiss Watch.html">
+                    <img src="Watches/1.jpg" alt="Watch 1">
+                    <div class="description">Calvin Kleins Ladies Swiss Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Suzanne Somers Rhinestone Quartz Watch.html">
+                    <img src="Watches/2.jpg" alt="Watch 2">
+                    <div class="description">Suzanne Somers Rhinestone Quartz Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Swarovski Summerside Womens Watch.html">
+                    <img src="Watches/3.jpg" alt="Watch 3">
+                    <div class="description">Swarovski Summerside Womens Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="vasia Ladies Watch (1st Edition).html">
+                    <img src="Watches/4.jpg" alt="Watch 4">
+                    <div class="description">vasia Ladies Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <!-- Row 2 -->
+            <div class="necklace-box">
+                <a href="ALORA Womens Watch.html">
+                    <img src="Watches/5.jpg" alt="Watch 5">
+                    <div class="description">ALORA Womens Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Pierre Rucci Womens Watch.html">
+                    <img src="Watches/6.jpg" alt="Watch 6">
+                    <div class="description">Pierre Rucci Womens Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Extreme Brand Womens Quartz Watch.html">
+                    <img src="Watches/7.jpg" alt="Watch 7">
+                    <div class="description">Extreme Brand Womens Quartz Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Daniel Klein Womens Watch.html">
+                    <img src="Watches/13.jpg" alt="Watch 8">
+                    <div class="description">Daniel Klein Womens Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <!-- Row 3 -->
+            <div class="necklace-box">
+                <a href="Betone Women's Classical Watch.html">
+                    <img src="Watches/9.jpg" alt="Watch 9">
+                    <div class="description">Betone Women's Classical Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="J.Laurent Quartz Womens Watch.html">
+                    <img src="Watches/10.jpg" alt="Watch 10">
+                    <div class="description">J.Laurent Quartz Womens Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Geneva Ladies Watch.html">
+                    <img src="Watches/11.jpg" alt="Watch 11">
+                    <div class="description">Geneva Ladies Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Renaissance Ladies Quartz Watch.html">
+                    <img src="Watches/12.jpg" alt="Watch 12">
+                    <div class="description">Renaissance Ladies Quartz Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Daniel Klein's Time Womens Watch (1st Edition).html">
+                    <img src="Watches/8.jpg" alt="Watch 13">
+                    <div class="description">Daniel Klein's Time Womens Watch (1st Edition)</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Ricci Womens Watch.html">
+                    <img src="Watches/14.jpg" alt="Watch 14">
+                    <div class="description">Ricci Womens Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="vasia Ladies Watch (2nd Edition).html">
+                    <img src="Watches/15.jpg" alt="Watch 15">
+                    <div class="description">vasia Ladies Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Osirock Womens Quartz Watch (1st Edition).html">
+                    <img src="Watches/16.jpg" alt="Watch 16">
+                    <div class="description">Osirock Womens Quartz Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Daniel Klein's Time Womens Watch (2nd Edition).html">
+                    <img src="Watches/17.jpg" alt="Watch 17">
+                    <div class="description">Daniel Klein's Time Womens Watch (2nd Edition)</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Freelook Womens Watch.html">
+                    <img src="Watches/18.jpg" alt="Watch 18">
+                    <div class="description">Freelook Womens Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Daniel Kleins Quartz Womens Watch.html">
+                    <img src="Watches/19.jpg" alt="Watch 19">
+                    <div class="description">Daniel Klein's Quartz Womens Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="MYWish Quartz Womens Watch.html">
+                    <img src="Watches/20.jpg" alt="Watch 20">
+                    <div class="description">MYWish Quartz Womens Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Osirock Womens Quartz Watch (2nd Edition).html">
+                    <img src="Watches/21.jpg" alt="Watch 21">
+                    <div class="description">Osirock Quartz Womens Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="RUMOURS Quartz Womens Watch.html">
+                    <img src="Watches/22.jpg" alt="Watch 22">
+                    <div class="description">RUMOURS Quartz Womens Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Anne Klein II, Womens Diamond Quartz Watch.html">
+                    <img src="Watches/23.jpg" alt="Watch 23">
+                    <div class="description">Anne Klein II, Womens Diamond Quartz Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+            <div class="necklace-box">
+                <a href="Vernier Quartz Womens Watch.html">
+                    <img src="Watches/24.jpg" alt="Watch 24">
+                    <div class="description">Vernier Quartz Womens Watch</div>
+                    <div class="price">Price: $35</div>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

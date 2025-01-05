@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XJT3JC6VKR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XJT3JC6VKR');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Betone Women's Classical Watch</title>
@@ -16,16 +25,16 @@
         /* Navigation bar styles */
         .navbar {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             background-color: #000; /* Black background for the navbar */
             padding: 10px 20px;
         }
 
         .navbar .logo {
-            font-size: 1.5em;
+            font-size: 2em; /* Larger logo font size */
             color: #fff;
             text-decoration: none;
+            margin-right: auto; /* Push the navigation links to the right */
         }
 
         .navbar ul {
@@ -33,16 +42,17 @@
             margin: 0;
             padding: 0;
             display: flex;
+            gap: 20px; /* Add spacing between the navigation items */
         }
 
         .navbar ul li {
-            margin-left: 20px;
+            margin: 0;
         }
 
         .navbar ul li a {
             color: #fff;
             text-decoration: none;
-            font-size: 1em;
+            font-size: 1.2em; /* Increased font size for the navigation links */
         }
 
         .container {
@@ -84,29 +94,14 @@
             color: #FFD700; /* Gold color for price */
         }
 
-         /* Buttons and additional text styles */
-         .pay-now-button {
+        /* Pay Now button and Free Shipping text */
+        .pay-now-button {
             display: block;
             width: 100%;
             padding: 10px;
             margin-top: 20px;
             background-color: #FFD700; /* Gold color for button */
             color: #000; /* Black text color for button */
-            text-align: center;
-            text-decoration: none;
-            font-size: 1.2em;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .play-voice-button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin-top: 20px;
-            background-color: #000000; /* Gold color for button */
-            color: #ffffff; /* Black text color for button */
             text-align: center;
             text-decoration: none;
             font-size: 1.2em;
@@ -122,77 +117,35 @@
             margin-top: 5px;
         }
 
-        .audio-player {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .audio-player audio {
-            width: 100%; /* Ensures the audio player fits nicely */
-        }
-
-        .soundcloud-link {
-            margin-top: 10px;
-            text-align: center;
-        }
-
-        .soundcloud-link a {
-            color: #FFD700; /* Gold color for the link */
-            text-decoration: none;
-            font-size: 1em;
-        }
-
-        .soundcloud-link a:hover {
-            text-decoration: underline;
-        }
-
     </style>
 </head>
 <body>
-        <nav class="navbar">
-            <a href="Home.html" class="logo">NOVELTY BOY NORTH</a>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="index.html">The Knockoff Charts</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar">
+        <a href="index.html" class="logo">NOVELTY BOY</a>
+        <ul>
+            <li><a href="Watches.html">Watches</a></li>
+            <li><a href="Necklaces.html">Necklaces</a></li>
+            <li><a href="Rings.html">Rings</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <div class="gallery">
-            <!-- Gallery images will go here -->
-            <img src="images/9.jpg" alt="Watch 9">
-            <!-- Add more images as needed -->
+            <img src="Watches/9.jpg" alt="Betone Women's Classical Watch">
         </div>
         <div class="item-details">
             <h1>Betone Women's Classical Watch</h1>
-            <p class="description">Complete your look with the timeless elegance of the Betone Women's Classical Watch. This beautifully crafted timepiece combines classic design with modern functionality, making it perfect for any occasion. Its reliable quartz movement ensures accurate timekeeping, while the sophisticated design adds a touch of luxury to your wrist.</p>
-            <p class="price">$35.00</p>
-            <button class="pay-now-button">Pay Now</button>
-            <p class="free-shipping">15$ Shipping</p>
-            <div class="audio-player">
-                <button class="play-voice-button">Play Voice Memo 👇</button>
-                <br>
-                <audio controls>
-                    <source src="path_to_audio.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
+            <p class="description">
+                Complete your look with the timeless elegance of the Betone Women's Classical Watch. This beautifully crafted timepiece combines classic design with modern functionality, making it perfect for any occasion. Its reliable quartz movement ensures accurate timekeeping, while the sophisticated design adds a touch of luxury to your wrist.            </p>
+                <p class="price">Stock: 1</p>
+                <script src="https://www.paypal.com/sdk/js?client-id=BAAfUC9FDxmw5Yw6sGSJShp154vsyIMu7qqdy5Hvop-NIYqrQVS537LEkpH1FNQNZcRrl3Knait2KJyvkA&components=hosted-buttons&disable-funding=venmo&currency=CAD"></script>
+<div id="paypal-container-Y3PSPKRENTU4U"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "Y3PSPKRENTU4U",
+  }).render("#paypal-container-Y3PSPKRENTU4U")
+</script>
         </div>
     </div>
-
-    <!-- Audio Element -->
-    <audio id="audio" src="path_to_audio.mp3"></audio>
-    <!-- 
-    
-    <div class="soundcloud-link">
-        <a href="https://soundcloud.com" target="_blank">Play on SoundCloud</a>
-    </div>
-    -->
-
-    <script>
-        function playAudio() {
-            const audio = document.getElementById('audio');
-            audio.play();
-        }
-    </script>
 </body>
 </html>
